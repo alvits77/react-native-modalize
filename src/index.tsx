@@ -368,17 +368,17 @@ const ModalizeBase = (
   };
 
   const handleModalizeContentLayout = ({ nativeEvent: { layout } }: LayoutChangeEvent): void => {
-    const value = Math.min(
-      layout.height + (!adjustToContentHeight || keyboardHeight ? layout.y : 0),
-      endHeight -
-        Platform.select({
-          ios: 0,
-          android: keyboardHeight,
-          default: 0,
-        }),
-    );
+//     const value = Math.min(
+//       layout.height + (!adjustToContentHeight || keyboardHeight ? layout.y : 0),
+//       endHeight -
+//         Platform.select({
+//           ios: 0,
+//           android: keyboardHeight,
+//           default: 0,
+//         }),
+//     );
 
-    setModalHeightValue(value);
+//     setModalHeightValue(value);
   };
 
   const handleBaseLayout = (
